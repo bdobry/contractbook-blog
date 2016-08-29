@@ -1,0 +1,58 @@
+#post {
+  background: white;
+  display: block;
+}
+
+.post-content {
+  margin: 0 auto;
+  width: 700px;
+  .subtitle {
+    font-size: 120%;
+  }
+  i {
+    width: 75% !important;
+    text-align: center !important;
+  }
+  .social-media {
+    margin: 40px 0 40px 0;
+    width: 100%;
+    width: auto;
+    vertical-align: middle;
+    position: relative;
+    z-index: 2;
+    font-size: 0;
+    .social-media--icons,
+    p,
+    {
+      font-size: initial;
+      display: inline-block;
+      padding-right: 10px;
+      background: white;
+    }
+    img {
+      width: 30px;
+    }
+    hr {
+      z-index: -1;
+      position: absolute;
+      top: 12px;
+      width: 100%;
+    }
+  }
+}
+
+.title {
+  background: #F7F7F7;
+  display: block;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  h2,
+  date {
+    max-width: 1160px;
+  }
+}

@@ -1,9 +1,22 @@
+main {
+  height: 100%;
+}
+
 .blog-post {
   max-width: 1160px;
   margin-right: auto;
   margin-left: auto;
   display: block;
   margin-top: $margin-small;
+  width: 100%;
+  clear: both;
+  &:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+  }
   .img,
   .content {
     padding-left: 15px;
@@ -19,14 +32,31 @@
   .content {
     width: 66.66666666%;
     float: left;
+    date {
+      display: block;
+      padding-bottom: 20px;
+    }
+    .read-more {
+      color: inherit;
+      text-decoration: underline;
+    }
   }
-  hr {
-    margin-top: $margin-small;
-    padding-top: 30px;
+  .break {
     display: block;
+    width: 100%;
+    max-width: 1160px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    hr {
+      display: block;
+      margin-top: $margin-small;
+      margin-bottom: 0.5em;
+      margin-left: auto;
+      margin-right: auto;
+      border-style: inset;
+      border-width: 1px;
+      width: 100%;
+    }
   }
-}
-
-.block {
-  display: block;
 }

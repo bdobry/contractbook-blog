@@ -40,9 +40,6 @@ meta.foundation-mq-xxlarge {
 meta.foundation-data-attribute-namespace {
   font-family: false; }
 
-html, body {
-  height: 100%; }
-
 *,
 *:before,
 *:after {
@@ -4210,7 +4207,16 @@ nav {
     display: flex; }
   nav .logo {
     padding: 17px 0;
-    width: 180px; }
+    width: 220px;
+    position: relative; }
+    nav .logo a,
+    nav .logo span {
+      display: inline-block; }
+    nav .logo span {
+      position: absolute;
+      top: 19px;
+      right: 0;
+      color: #add342 !important; }
 
 .mobile-modal {
   display: none;
@@ -4488,5 +4494,75 @@ main {
       border-style: inset;
       border-width: 1px;
       width: 100%; }
+
+#post {
+  background: white;
+  display: block; }
+
+.post-content {
+  margin: 0 auto;
+  width: 700px;
+  margin-bottom: 40px; }
+  .post-content .subtitle {
+    font-size: 120%; }
+  .post-content em {
+    width: 75% !important;
+    text-align: center !important; }
+  .post-content p a {
+    color: inherit;
+    border-bottom: 3px solid #add342; }
+    .post-content p a:hover {
+      border-bottom: 3px solid #90b037; }
+  .post-content .social-media {
+    margin: 40px 0 40px 0;
+    width: 100%;
+    width: auto;
+    vertical-align: middle;
+    position: relative;
+    z-index: 2;
+    font-size: 0; }
+    .post-content .social-media .social-media--icons,
+    .post-content .social-media p {
+      font-size: initial;
+      display: inline-block;
+      padding-right: 10px;
+      background: white; }
+    .post-content .social-media img {
+      width: 30px; }
+    .post-content .social-media hr {
+      z-index: -1;
+      position: absolute;
+      top: 12px;
+      width: 100%; }
+
+.title {
+  background: #F7F7F7;
+  display: block;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .title h2,
+  .title date {
+    max-width: 1160px; }
+
+.next-article {
+  background: #F7F7F7;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 10px; }
+  .next-article .next-article-inner {
+    display: block;
+    max-width: 1160px;
+    padding: 0 20px;
+    margin: 0 auto;
+    text-align: right; }
+    .next-article .next-article-inner a {
+      color: inherit; }
+    .next-article .next-article-inner h4 {
+      opacity: .7; }
 
 /*# sourceMappingURL=main.css.map */

@@ -4501,8 +4501,9 @@ main {
 
 .post-content {
   margin: 0 auto;
-  width: 700px;
-  margin-bottom: 40px; }
+  max-width: 700px;
+  margin-bottom: 40px;
+  padding: 0 20px; }
   .post-content .subtitle {
     font-size: 120%; }
   .post-content em {

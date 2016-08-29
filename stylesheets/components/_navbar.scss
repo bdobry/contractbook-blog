@@ -19,7 +19,18 @@ nav {
   }
   .logo {
     padding: 17px 0;
-    width: 180px;
+    width: 220px;
+    position: relative;
+    a,
+    span {
+      display: inline-block;
+    }
+    span {
+      position: absolute;
+      top: 19px;
+      right: 0;
+      color: $color-light-green !important;
+    }
   }
 }
 

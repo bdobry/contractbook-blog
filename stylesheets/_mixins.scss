@@ -1,0 +1,26 @@
+@mixin small-hide-br {
+  @media #{$small-only} {
+    br {
+      display: none;
+    }
+  }
+}
+
+@mixin editable {
+  display: inline-block;
+  outline: none;
+  margin: 0;
+  padding: rem-calc(6) rem-calc(10);
+  line-height: 1;
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border: 1px dashed $primary-color;
+    background: url("https://res.cloudinary.com/contractbook/image/upload/v1444103577/layout/edit-icn.png") center right rem-calc(10px) no-repeat;
+  }
+  &:focus {
+    border-style: solid;
+  }
+  padding-right: rem-calc(37);
+}

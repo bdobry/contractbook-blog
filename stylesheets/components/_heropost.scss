@@ -1,0 +1,78 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.hero-post {
+  height: 65vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  align-items: center;
+}
+
+.hero-post-inner {
+  overflow: hidden;
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+  .hero-post-img,
+  .hero-post-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero-post-img {
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    /* Set img wrapper to 200% so img get centered*/
+    .featured-img {
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      /* Set img size to 50% so it's 100% of hero-post-img container*/
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        min-width: 50%;
+        min-height: 50%;
+      }
+    }
+  }
+}
+
+.hero-post-content {
+  //    background: tomato;
+  text-align: left;
+  padding: 5rem;
+  h1 {
+    margin-bottom: 10px;
+  }
+  p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

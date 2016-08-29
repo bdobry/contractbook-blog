@@ -1,0 +1,81 @@
+label {
+  font-size: rem-calc(14);
+  > input[type="text"],
+  > input[type="password"],
+  > input[type="date"],
+  > input[type="datetime"],
+  > input[type="datetime-local"],
+  > input[type="month"],
+  > input[type="week"],
+  > input[type="email"],
+  > input[type="number"],
+  > input[type="search"],
+  > input[type="tel"],
+  > input[type="time"],
+  > input[type="url"],
+  > input[type="color"],
+  textarea {
+    margin-top: rem-calc(16);
+  }
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="color"],
+textarea {
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    border: 1px solid #E3E3E3;
+  }
+  padding: rem-calc(12) rem-calc(16);
+  height: auto;
+}
+
+.input-wrap {
+  position: relative;
+  .error-msg {
+    color: $alert-color;
+    font-size: rem-calc(14);
+    margin-bottom: rem-calc(16);
+    @media #{$large-up} {
+      position: absolute;
+      top: 42px;
+      height: 42px;
+      left: 100%;
+      padding: 0 20px;
+      width: 100%;
+    }
+  }
+  &--error {
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="month"],
+    input[type="week"],
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="time"],
+    input[type="url"],
+    input[type="color"],
+    textarea {
+      border-color: $alert-color;
+    }
+  }
+}

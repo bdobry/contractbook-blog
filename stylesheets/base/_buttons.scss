@@ -1,0 +1,35 @@
+button,
+.button {
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom-width: 3px;
+  transition: all 0.2s;
+  outline: none;
+  padding: 9px 20px 10px;
+  max-width: 200px;
+  &:active {
+    border-top-width: 3px;
+    border-bottom-width: 0px;
+    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  &.ghost {
+    background: #FFF;
+    box-shadow: none;
+    border: 1px solid $jet;
+    color: $jet;
+    &:hover,
+    &:focus,
+    &:active {
+      background: $jet;
+      color: $white;
+    }
+  }
+
+  .fa {
+    margin: 0 rem-calc(5);
+    font-size: 120%;
+  }
+}

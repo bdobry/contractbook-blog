@@ -1,0 +1,16 @@
+@keyframes fadeBackgroundInFromNone {
+  0% {
+    display:none;
+    background: transparent;
+  }
+
+  1% {
+    display: block ;
+    background: transparent;
+  }
+
+  100% {
+    display: block ;
+    background: $jet;
+  }
+}

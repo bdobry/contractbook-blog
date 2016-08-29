@@ -4357,6 +4357,7 @@ nav {
   line-height: 28px; }
 
 footer {
+  clear: both;
   background-color: #f7f7f7;
   max-width: 1160px;
   margin: 0 auto;

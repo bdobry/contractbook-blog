@@ -42,6 +42,29 @@
     background-color: white;
     position: relative;
     overflow: hidden;
+    &:after {
+      content: "";
+      width: 50px;
+      height: 50px;
+      display: block;
+      transform: rotateZ(45deg);
+      position: absolute;
+      right: -25px;
+      top: 80px;
+      background: #F7F7F7;
+    }
+    &:before {
+      content: "";
+      width: 50px;
+      height: 50px;
+      display: block;
+      transform: rotateZ(45deg);
+      position: absolute;
+      right: -25px;
+      top: 140px;
+      background: #F7F7F7;
+      z-index: 2;
+    }
     /* Set img wrapper to 200% so img get centered*/
     .featured-img {
       position: absolute;
@@ -65,12 +88,19 @@
 }
 
 .hero-post-content {
-  //    background: tomato;
   text-align: left;
   padding: 5rem;
+  h1 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+  date {
+    margin-bottom: 25px;
+  }
   p {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }
 
@@ -116,4 +146,24 @@
       }
     }
   }
+}
+
+.cover-right-top {
+  position: absolute;
+  width: 35px;
+  background: #F7F7F7;
+  top: 0;
+  right: 0;
+  height: 105px;
+  z-index: 2;
+}
+
+.cover-right-bottom {
+  position: absolute;
+  width: 35px;
+  background: #F7F7F7;
+  top: 165px;
+  right: 0;
+  height: 485px;
+  z-index: 2;
 }

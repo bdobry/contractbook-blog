@@ -5,7 +5,7 @@
 
 .post-content {
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 750px;
   margin-bottom: $margin-small;
   padding: 0 20px;
   p {
@@ -18,18 +18,20 @@
     }
     i {
       display: block;
-      width: 75%;
+      max-width: 550px;
       margin: 0 auto;
       text-align: center !important;
-      font-weight: 600;
-      padding-top: 50px;
-      padding-bottom: 50px;
+      padding-top: 60px;
+      padding-bottom: 60px;
       @media (max-width: 760px) {
         width: 100%;
         padding-top: 25px;
         padding-bottom: 25px;
       }
     }
+  }
+  .img {
+    margin-top: 27px;
   }
   .social-media {
     margin: 40px 0 40px 0;
@@ -41,14 +43,19 @@
     font-size: 0;
     .social-media--icons,
     p {
-      font-size: initial;
-      font-weight: 300;
       display: inline-block;
-      padding-right: 10px;
+      padding-right: 12px;
       background: white;
+      color: #838383;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 24px;
+      margin-bottom: 0;
     }
     img {
       width: 30px;
+      margin-right: 5px;
     }
     hr {
       z-index: -1;
@@ -67,13 +74,18 @@
   margin-right: auto;
   width: 100%;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 46px;
+  padding-bottom: 23px;
   h2,
   date {
-    max-width: 1160px;
+    max-width: 715px;
     margin-right: auto;
     margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  h2 {
+    margin-bottom: 30px;
   }
 }
 
@@ -84,12 +96,15 @@
   margin-bottom: 10px;
   .next-article-inner {
     display: block;
-    max-width: 1160px;
+    max-width: 760px;
     padding: 0 20px;
     margin: 0 auto;
     text-align: right;
     a {
       color: inherit;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 36px;
     }
   }
 }

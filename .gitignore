@@ -1,5 +1,8 @@
 # ignore css map
 css/main.css.map
 
+# ignore css
+css/main.css
+
 # ignore brackets' sass setup
 .brackets.json

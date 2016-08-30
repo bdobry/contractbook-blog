@@ -11,16 +11,26 @@
   .subtitle {
     font-size: 120%;
   }
-  em {
-    width: 75% !important;
-    text-align: center !important;
-  }
   p {
     a {
       color: inherit;
       border-bottom: 3px solid $color-light-green;
       &:hover {
         border-bottom: 3px solid $color-light-green/1.2;
+      }
+    }
+    i {
+      display: block;
+      width: 75%;
+      margin: 0 auto;
+      text-align: center !important;
+      font-weight: 600;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      @media (max-width: 760px) {
+        width: 100%;
+        padding-top: 25px;
+        padding-bottom: 25px;
       }
     }
   }
@@ -45,7 +55,7 @@
     hr {
       z-index: -1;
       position: absolute;
-      top: 12px;
+      top: 14px;
       width: 100%;
     }
   }

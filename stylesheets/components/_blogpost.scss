@@ -59,7 +59,53 @@ main {
   }
 }
 
-hr {
-  border: 0;
-  border-bottom: 1px solid #e8e8e8;
+@media (max-width: 620px) {
+  .blog-post {
+    max-width: 1160px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    margin-top: $margin-small;
+    width: 100%;
+    clear: both;
+    &:first-of-type {
+      margin-top: 0;
+      &:before {
+        content: "";
+        display: block;
+        border-top: 2px solid #e8e8e8;
+        padding-bottom: 30px;
+      }
+    }
+    &:after {
+      content: ".";
+      visibility: hidden;
+      display: block;
+      height: 0;
+      clear: both;
+    }
+    .img,
+    .content {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .img {
+      width: 100%;
+      img {
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+    .content {
+      width: 100%;
+      date {
+        display: block;
+        padding-bottom: 20px;
+      }
+      .read-more {
+        color: inherit;
+        text-decoration: underline;
+      }
+    }
+  }
 }

@@ -23,6 +23,7 @@
   -moz-box-align: center;
   box-align: center;
   align-items: center;
+  background: #F7F7F7;
 }
 
 .hero-post-inner {
@@ -99,7 +100,7 @@
       }
     }
     .hero-post-img {
-      z-index: -1;
+      z-index: 0;
       position: relative;
       .featured-img {
         position: relative;

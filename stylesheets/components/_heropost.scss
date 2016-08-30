@@ -80,7 +80,7 @@
   }
   .hero-post-inner {
     display: block;
-    overflow:visible;
+    overflow: visible;
     .hero-post-img,
     .hero-post-content {
       width: 100%;
@@ -90,10 +90,13 @@
     }
     .hero-post-content {
       padding: 20px;
-//      margin-left: 20px;
-//      margin-right: 20px;
-//      background: white;
-//      margin-top: -90px;
+      //      margin-left: 20px;
+      //      margin-right: 20px;
+      //      background: white;
+      //      margin-top: -90px;
+      button {
+        margin-bottom: 10px;
+      }
     }
     .hero-post-img {
       z-index: -1;

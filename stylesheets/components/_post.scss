@@ -8,9 +8,6 @@
   max-width: 700px;
   margin-bottom: $margin-small;
   padding: 0 20px;
-  .subtitle {
-    font-size: 120%;
-  }
   p {
     a {
       color: inherit;
@@ -45,6 +42,7 @@
     .social-media--icons,
     p {
       font-size: initial;
+      font-weight: 300;
       display: inline-block;
       padding-right: 10px;
       background: white;
@@ -90,9 +88,6 @@
     text-align: right;
     a {
       color: inherit;
-    }
-    h4 {
-      opacity: .7;
     }
   }
 }

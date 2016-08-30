@@ -7,6 +7,12 @@ h2 {
   line-height: 27px;
   margin: 0 0 20px;
   margin-bottom: 10px;
+  a {
+    color: inherit;
+    &:hover {
+      color: $color-light-green;
+    }
+  }
 }
 
 h3 {}

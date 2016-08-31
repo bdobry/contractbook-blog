@@ -4357,6 +4357,17 @@ nav {
   font-weight: 700;
   line-height: 28px; }
 
+.older-posts {
+  padding: 50px 20px 50px 20px; }
+  .older-posts a {
+    color: inherit;
+    font-family: Open Sans;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 36px; }
+  .older-posts img {
+    margin-top: -2px; }
+
 .footer-inner {
   max-width: 1160px;
   margin: 0 auto;

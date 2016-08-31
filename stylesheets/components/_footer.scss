@@ -45,6 +45,20 @@
   line-height: 28px;
 }
 
+.older-posts {
+  padding: $margin-small 20px $margin-small 20px;
+  a {
+    color: inherit;
+    font-family: Open Sans;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 36px;
+  }
+  img {
+    margin-top: -2px;
+  }
+}
+
 .footer-inner {
   max-width: 1160px;
   margin: 0 auto;

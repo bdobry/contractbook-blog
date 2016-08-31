@@ -56,6 +56,9 @@ main {
       font-weight: 300;
       line-height: 30px;
       text-decoration: underline;
+      &:hover {
+        color: $color-light-green;
+      }
     }
   }
   .break {

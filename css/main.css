@@ -4483,6 +4483,8 @@ footer {
   .hero-post-content p {
     margin-bottom: 30px;
     max-width: 550px; }
+    .hero-post-content p a {
+      color: inherit; }
 
 .cover-right-top {
   position: absolute;
@@ -4561,6 +4563,9 @@ main {
   .blog-post .content {
     padding-left: 15px;
     padding-right: 15px; }
+    .blog-post .img a,
+    .blog-post .content a {
+      color: inherit; }
   .blog-post .img {
     width: 33.33333333%;
     float: left; }

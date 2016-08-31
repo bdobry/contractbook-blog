@@ -21,6 +21,9 @@ main {
   .content {
     padding-left: 15px;
     padding-right: 15px;
+    a {
+      color: inherit;
+    }
   }
   .img {
     width: 33.33333333%;

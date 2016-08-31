@@ -32,12 +32,26 @@ main {
   .content {
     width: 66.66666666%;
     float: left;
+    p {
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 36px;
+      margin-bottom: 0;
+    }
     date {
       display: block;
-      padding-bottom: 20px;
+      padding-bottom: 25px;
+      margin: 0;
     }
     .read-more {
       color: inherit;
+      font-size: 18px;
+      font-family: Open Sans;
+      font-weight: 300;
+      line-height: 30px;
       text-decoration: underline;
     }
   }

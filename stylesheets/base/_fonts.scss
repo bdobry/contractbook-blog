@@ -50,6 +50,9 @@ h4 {
   line-height: 36px;
   font-family: Libre Baskerville;
   opacity: .6;
+  a {
+    font-size: inherit !important;
+  }
 }
 
 hr {

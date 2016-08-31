@@ -1,20 +1,20 @@
 button,
 .button {
-  font-weight: bold;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 700;
   letter-spacing: 1px;
+  line-height: 19px;
   text-transform: uppercase;
   border-bottom-width: 3px;
   transition: all 0.2s;
   outline: none;
   padding: 9px 20px 10px;
-  max-width: 200px;
+  width: 200px;
   &:active {
     border-top-width: 3px;
     border-bottom-width: 0px;
     box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
   }
-
   &.ghost {
     background: #FFF;
     box-shadow: none;
@@ -27,7 +27,6 @@ button,
       color: $white;
     }
   }
-
   .fa {
     margin: 0 rem-calc(5);
     font-size: 120%;

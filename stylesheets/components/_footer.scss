@@ -46,6 +46,8 @@
 }
 
 .older-posts {
+  max-width: 1160px;
+  margin: 0 auto;
   padding: $margin-small 20px $margin-small 20px;
   a {
     color: inherit;

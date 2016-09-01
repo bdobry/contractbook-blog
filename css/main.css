@@ -4360,6 +4360,8 @@ nav {
   line-height: 28px; }
 
 .older-posts {
+  max-width: 1160px;
+  margin: 0 auto;
   padding: 50px 20px 50px 20px; }
   .older-posts a {
     color: inherit;

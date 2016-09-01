@@ -3,6 +3,7 @@
 
 <head>
   <title>Header</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -153,19 +154,16 @@
       if ('max' in document.createElement('progress')) {
         // Browser supports progress element
         var progressBar = $('progress');
-
         // Set the Max attr for the first time
         progressBar.attr({
           max: getMax()
         });
-
         $(document).on('scroll', function () {
           // On scroll only Value attr needs to be calculated
           progressBar.attr({
             value: getValue()
           });
         });
-
         $(window).resize(function () {
           // On resize, both Max/Value attr needs to be calculated
           progressBar.attr({
@@ -204,24 +202,9 @@
     $(document).ready(function () {
       $('#progressBar').addClass('flat');
       $(document).on('scroll', function () {
-
         maxAttr = $('#progressBar').attr('max');
         valueAttr = $('#progressBar').attr('value');
         percentage = (valueAttr / maxAttr) * 100;
-
-        if (percentage < 49) {
-          document.styleSheets[0].addRule('.semantic', 'color: red');
-          document.styleSheets[0].addRule('.semantic::-webkit-progress-value', 'background-color: red');
-          document.styleSheets[0].addRule('.semantic::-moz-progress-bar', 'background-color: red');
-        } else if (percentage < 98) {
-          document.styleSheets[0].addRule('.semantic', 'color: orange');
-          document.styleSheets[0].addRule('.semantic::-webkit-progress-value', 'background-color: orange');
-          document.styleSheets[0].addRule('.semantic::-moz-progress-bar', 'background-color: orange');
-        } else {
-          document.styleSheets[0].addRule('.semantic', 'color: green');
-          document.styleSheets[0].addRule('.semantic::-webkit-progress-value', 'background-color: green');
-          document.styleSheets[0].addRule('.semantic::-moz-progress-bar', 'background-color: green');
-        }
       });
 
     });
@@ -229,9 +212,8 @@
 
   <script>
     function fixDiv() {
-//      alert($("#progressBar").offset().top);
       var $progress = $("#progressBar");
-      if ($(window).scrollTop() + 70 > $progress.data("top")) {
+      if ($(window).scrollTop() + 60 > $progress.data("top")) {
         $progress.css({
           'position': 'fixed',
           'top': '60px'

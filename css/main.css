@@ -4701,6 +4701,7 @@ main {
       width: 100%; }
 
 .title {
+  position: relative;
   background: #F7F7F7;
   display: block;
   margin: 0;
@@ -4736,5 +4737,34 @@ main {
       font-size: 18px;
       font-weight: 300;
       line-height: 36px; }
+
+progress {
+  /* Positioning */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /* Dimensions */
+  width: 100%;
+  height: .25em;
+  /* Reset the apperance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+  /* For Firefox/IE10+ */
+  background-color: transparent;
+  /* For IE10+, color of the progress bar */
+  color: #add342;
+  z-index: 999; }
+
+progress::-webkit-progress-bar {
+  background-color: transparent; }
+
+.flat::-webkit-progress-value {
+  background-color: #add342; }
+
+.flat::-moz-progress-bar {
+  background-color: #add342; }
 
 /*# sourceMappingURL=main.css.map */

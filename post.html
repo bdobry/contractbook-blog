@@ -10,8 +10,8 @@
   <nav>
     <div class="main">
       <div class="logo">
-        <a href="index.html"><img src="https://contractbook.co/767e4ee0d7e0ee7ecf24d56de7b71d2b.png" alt="contractbook"></a>
-        <span>blog</span>
+        <a href="index.html"><img src="https://contractbook.co/767e4ee0d7e0ee7ecf24d56de7b71d2b.png" alt="contractbook">
+          <span>blog</span></a>
       </div>
       <ul>
         <li><a href="#">EN</a></li>
@@ -25,6 +25,7 @@
     <header class="title">
       <h2>The Principles of UX Choreography</h2>
       <date>December 5th, 2016</date>
+      <progress value="0" id="progressBar"></progress>
     </header>
 
     <section class="post-content">
@@ -37,6 +38,8 @@
         </div>
         <hr>
       </div>
+
+      <p class="subtitle">Marketch is a Sketch 3 plug-in for automatically generating html page</p>
 
       <p class="subtitle">Marketch is a Sketch 3 plug-in for automatically generating html page</p>
 
@@ -135,7 +138,119 @@
       </p>
     </div>
   </footer>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      var getMax = function () {
+        return $(document).height() - $(window).height();
+      }
+
+      var getValue = function () {
+        return $(window).scrollTop();
+      }
+
+      if ('max' in document.createElement('progress')) {
+        // Browser supports progress element
+        var progressBar = $('progress');
+
+        // Set the Max attr for the first time
+        progressBar.attr({
+          max: getMax()
+        });
+
+        $(document).on('scroll', function () {
+          // On scroll only Value attr needs to be calculated
+          progressBar.attr({
+            value: getValue()
+          });
+        });
+
+        $(window).resize(function () {
+          // On resize, both Max/Value attr needs to be calculated
+          progressBar.attr({
+            max: getMax(),
+            value: getValue()
+          });
+        });
+      } else {
+        var progressBar = $('.progress-bar'),
+          max = getMax(),
+          value, width;
+
+        var getWidth = function () {
+          // Calculate width in percentage
+          value = getValue();
+          width = (value / max) * 100;
+          width = width + '%';
+          return width;
+        }
+
+        var setWidth = function () {
+          progressBar.css({
+            width: getWidth()
+          });
+        }
+
+        $(document).on('scroll', setWidth);
+        $(window).on('resize', function () {
+          // Need to reset the Max attr
+          max = getMax();
+          setWidth();
+        });
+      }
+    });
+
+    $(document).ready(function () {
+      $('#progressBar').addClass('flat');
+      $(document).on('scroll', function () {
+
+        maxAttr = $('#progressBar').attr('max');
+        valueAttr = $('#progressBar').attr('value');
+        percentage = (valueAttr / maxAttr) * 100;
+
+        if (percentage < 49) {
+          document.styleSheets[0].addRule('.semantic', 'color: red');
+          document.styleSheets[0].addRule('.semantic::-webkit-progress-value', 'background-color: red');
+          document.styleSheets[0].addRule('.semantic::-moz-progress-bar', 'background-color: red');
+        } else if (percentage < 98) {
+          document.styleSheets[0].addRule('.semantic', 'color: orange');
+          document.styleSheets[0].addRule('.semantic::-webkit-progress-value', 'background-color: orange');
+          document.styleSheets[0].addRule('.semantic::-moz-progress-bar', 'background-color: orange');
+        } else {
+          document.styleSheets[0].addRule('.semantic', 'color: green');
+          document.styleSheets[0].addRule('.semantic::-webkit-progress-value', 'background-color: green');
+          document.styleSheets[0].addRule('.semantic::-moz-progress-bar', 'background-color: green');
+        }
+      });
+
+    });
+  </script>
+
+  <script>
+    function fixDiv() {
+//      alert($("#progressBar").offset().top);
+      var $progress = $("#progressBar");
+      if ($(window).scrollTop() + 70 > $progress.data("top")) {
+        $progress.css({
+          'position': 'fixed',
+          'top': '60px'
+        });
+      } else {
+        $progress.css({
+          'position': 'absolute',
+          'top': 'auto',
+          'bottom': '0',
+          'left': '0'
+        });
+      }
+    }
+
+    $("#progressBar").data("top", $("#progressBar").offset().top); // set original position on load
+    $(window).scroll(fixDiv);
+  </script>
+
+  <!--  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
 </body>
 
 </html>

@@ -10,11 +10,11 @@ button,
   outline: none;
   padding: 9px 20px 10px;
   width: 200px;
-  &:active {
-    border-top-width: 3px;
-    border-bottom-width: 0px;
-    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
-  }
+//  &:active {
+//    border-top-width: 3px;
+//    border-bottom-width: 0px;
+//    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+//  }
   &.ghost {
     background: #FFF;
     box-shadow: none;

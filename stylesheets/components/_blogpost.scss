@@ -1,3 +1,10 @@
+* {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition:    all 0.2s ease;
+  -ms-transition:     all 0.2s ease;
+  -o-transition:      all 0.2s ease;
+}
+
 main {
   height: 100%;
 }
@@ -24,6 +31,11 @@ main {
     a {
       color: inherit;
     }
+    h2 a {
+      &:hover {
+        color: $color-light-green;
+      }
+    }
   }
   .picture {
     width: 33.33333333%;
@@ -43,6 +55,9 @@ main {
       left: 50%;
       transform: translate(-50%, -50%);
       max-height: 300px;
+      &:hover {
+        opacity: .7;
+      }
     }
   }
   .content {

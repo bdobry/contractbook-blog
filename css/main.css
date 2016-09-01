@@ -4534,6 +4534,12 @@ footer {
   .cover-right-top {
     display: none; } }
 
+* {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease; }
+
 main {
   height: 100%; }
 
@@ -4558,6 +4564,9 @@ main {
     .blog-post .picture a,
     .blog-post .content a {
       color: inherit; }
+    .blog-post .picture h2 a:hover,
+    .blog-post .content h2 a:hover {
+      color: #add342; }
   .blog-post .picture {
     width: 33.33333333%;
     float: left; }
@@ -4575,6 +4584,8 @@ main {
       left: 50%;
       transform: translate(-50%, -50%);
       max-height: 300px; }
+      .blog-post .picture img:hover {
+        opacity: .7; }
   .blog-post .content {
     width: 66.66666666%;
     float: left;

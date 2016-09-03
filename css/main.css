@@ -4173,6 +4173,13 @@ h3,
 h4 {
   font-family: Libre Baskerville; }
 
+p,
+date,
+i,
+.caption,
+.wp-caption-text {
+  font-family: Open Sans; }
+
 h1 a,
 h2 a {
   color: inherit; }
@@ -4196,6 +4203,12 @@ h2 {
   font-weight: 400;
   line-height: 32px;
   margin: 0 0 35px; }
+
+h3 {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 27px;
+  margin: 0 0 30px; }
 
 h4 {
   font-size: 22px;
@@ -4221,7 +4234,6 @@ hr {
 
 p {
   color: #1f2532;
-  font-family: Open Sans;
   font-size: 18px;
   font-weight: 300;
   line-height: 30px; }
@@ -4231,7 +4243,9 @@ p {
     line-height: 28px;
     margin-bottom: 20px; }
 
-.caption {
+.caption,
+.wp-caption-text {
+  padding-top: 0;
   font-size: 12px;
   font-weight: 300;
   font-style: italic;
@@ -4240,7 +4254,6 @@ p {
 
 date {
   color: #1f2532;
-  font-family: Open Sans;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px; }
@@ -4599,7 +4612,8 @@ main {
       font-size: 22px;
       font-weight: 400;
       line-height: 36px;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      margin-top: 7px; }
     .blog-post .content date {
       display: block;
       padding-bottom: 25px;
@@ -4701,6 +4715,8 @@ main {
         width: 100%;
         padding-top: 25px;
         padding-bottom: 25px; } }
+  .post-content .wp-caption img {
+    max-width: 720px; }
   .post-content .img {
     margin-top: 27px; }
   .post-content .social-media {

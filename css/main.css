@@ -4354,20 +4354,28 @@ nav {
   font-weight: 700;
   line-height: 28px; }
 
-.older-posts {
+.archive-nav {
   max-width: 1160px;
-  margin: 0 auto;
-  padding: 40px 20px 50px 20px; }
-  .older-posts a {
-    color: inherit;
-    font-family: Open Sans;
-    font-size: 22px;
-    font-weight: 300;
-    line-height: 36px; }
-    .older-posts a:hover {
-      color: #add342; }
-  .older-posts img {
-    margin-top: -3px; }
+  margin: 0 auto; }
+  .archive-nav .archive-nav-wrapper {
+    padding: 40px 20px 50px 20px;
+    margin-bottom: 36px;
+    position: relative; }
+    .archive-nav .archive-nav-wrapper .right {
+      right: 15px; }
+    .archive-nav .archive-nav-wrapper .left {
+      left: 15px; }
+    .archive-nav .archive-nav-wrapper a {
+      position: absolute;
+      color: inherit;
+      font-family: Open Sans;
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 36px; }
+      .archive-nav .archive-nav-wrapper a:hover {
+        color: #add342; }
+    .archive-nav .archive-nav-wrapper img {
+      margin-top: -3px; }
 
 .footer-inner {
   max-width: 1160px;

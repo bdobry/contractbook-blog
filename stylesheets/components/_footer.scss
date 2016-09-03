@@ -45,22 +45,33 @@
   line-height: 28px;
 }
 
-.older-posts {
+.archive-nav {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 40px 20px $margin-small 20px;
-  a {
-    color: inherit;
-    font-family: Open Sans;
-    font-size: 22px;
-    font-weight: 300;
-    line-height: 36px;
-    &:hover {
-      color: $color-light-green;
+  .archive-nav-wrapper {
+    padding: 40px 20px $margin-small 20px;
+    margin-bottom: 36px;
+    position: relative;
+    .right {
+      right: 15px;
     }
-  }
-  img {
-    margin-top: -3px;
+    .left {
+      left: 15px;
+    }
+    a {
+      position: absolute;
+      color: inherit;
+      font-family: Open Sans;
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 36px;
+      &:hover {
+        color: $color-light-green;
+      }
+    }
+    img {
+      margin-top: -3px;
+    }
   }
 }
 

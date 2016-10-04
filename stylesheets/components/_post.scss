@@ -3,11 +3,57 @@
   display: block;
 }
 
+#disqus-section {
+  max-width: 750px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 0 20px;
+}
+
 .post-content {
+  -webkit-font-smoothing: antialiased;
   margin: 0 auto;
   max-width: 750px;
   margin-bottom: $margin-small;
   padding: 0 20px;
+  .button {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    background-color: #00D7FE;
+    border-color: #208597;
+    color: white;
+    width: auto;
+    &:hover {
+      background-color: #11B8D8;
+      border-color: #208597;
+    }
+  }
+  blockquote {
+    padding: 0 1.25rem 0 1.25rem;
+    border-left: 1px solid #DDDDDD;
+    margin: 40px 0 40px 0;
+    line-height: 1.6;
+    p {
+      font-size: 18px;
+      font-weight: 300;
+      color: #586a8f;
+    }
+  }
+  ul {
+    width: 85%;
+    list-style: decimal-leading-zero;
+    margin: 0 auto;
+    color: #1f2532;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    li {
+      margin: 0 0 1.25em;
+      padding: 0rem 1.45em 0 1.45em;
+    }
+  }
   p {
     a {
       color: inherit;
@@ -29,6 +75,24 @@
         padding-bottom: 25px;
       }
     }
+    b,
+    strong {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 28px;
+      margin-bottom: 20px;
+    }
+  }
+  h2 {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 20px;
+    margin: 0;
+    padding: 0;
+    margin-top: 35px;
+    margin-bottom: 15px;
   }
   .wp-caption img {
     max-width: 720px;
@@ -50,7 +114,7 @@
       padding-right: 12px;
       background: white;
       color: #838383;
-      font-family: "Open Sans";
+      font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-size: 14px;
       font-weight: 300;
       line-height: 24px;
@@ -103,7 +167,23 @@
     max-width: 760px;
     padding: 0 20px;
     margin: 0 auto;
-    text-align: right;
+    .left-align,
+    .right-align {
+      display: inline-block;
+      width: 50%;
+      vertical-align: top;
+    }
+    .left-align {
+      padding-right: 10px;
+    }
+    .right-align {
+      padding-left: 10px;
+      a {
+        text-align: right;
+        width: 100%;
+        display: block;
+      }
+    }
     a {
       color: inherit;
       font-size: 18px;

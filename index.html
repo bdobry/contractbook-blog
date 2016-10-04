@@ -9,17 +9,62 @@
 
 <body>
   <nav>
+    <div class="secondary">
+      <div class="secondary--inner">
+        <p>Call us: <a href="+4531388842">+45 31 38 88 42</a> and request an intro meeting.</p>
+        <p class="mobile">Call us: <a href="+4531388842">+45 31 38 88 42</a></p>
+        <ul>
+          <li><a href="#" class="active">EN</a></li>
+          <li>|</li>
+          <li><a href="#">DA</a></li>
+        </ul>
+      </div>
+    </div>
     <div class="main">
       <div class="logo">
-        <a href="index.html"><img src="https://contractbook.co/767e4ee0d7e0ee7ecf24d56de7b71d2b.png" alt="contractbook">
-          <span>blog</span></a>
+        <a href="index.html"><img src="img/contractbook-logo.png" alt="contractbook"></a>
       </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="https://contractbook.co/#howItWorks">How it works</a></li>
+          <li><a href="https://contractbook.co/login">Login</a></li>
+        </ul>
+        <a href="https://contractbook.co/sign-up" class="button">Sign up for free</a>
+        <button id="hamburger" type="button" title="Menu" class="">
+          <span style="background-color:#000;"></span>
+          <span style="background-color:#000;"></span>
+          <span style="background-color:#000;"></span>
+          <span style="background-color:#000;"></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-modal">
+      <ul>
+        <li><a href="https://contractbook.co/login">Login</a></li>
+        <li><a href="https://contractbook.co/#howItWorks">How it works</a></li>
+        <li><a href="https://contractbook.co/sign-up" class="button">Sign up for free</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--
+  <nav>
+    <div class="main">
+      <div class="logo">
+        <a href="index.html"><img src="img/contractbook-logo.png" alt="contractbook"></a>
+      </div>
+      <a href="https://contractbook.co/sign-up" class="button">Sign up for free</a>
+-->
+  <!--
       <ul>
         <li><a href="#">EN</a></li>
         <li><a href="#">DA</a></li>
       </ul>
+-->
+  <!--
     </div>
   </nav>
+-->
   <main id="content" class="group" role="main">
     <section class="hero-post">
       <div class="hero-post-inner">
@@ -177,6 +222,15 @@
       </p>
     </div>
   </footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+    $(function() {
+      $("#hamburger").click(function() {
+        $("#hamburger, #mobile-modal").toggleClass("active");
+      });
+    });
+
+  </script>
 </body>
 
 </html>

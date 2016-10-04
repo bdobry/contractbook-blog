@@ -1,13 +1,10 @@
 @import "settings";
 @import "foundation";
 @import "layout";
-
 @import "mixins";
 @import "keyframes";
-
 @import "base/buttons";
 @import "base/forms";
-
 @import "base/variables";
 @import "base/fonts";
 @import "components/navbar";
@@ -16,3 +13,84 @@
 @import "components/blogpost";
 @import "components/post";
 @import "components/progressbar";
+.an-wrap {
+  margin-top: 200px;
+  .an-box {
+    position: relative;
+    animation: slide-in forwards 8s;
+    animation-iteration-count: infinite;
+    width: 350px;
+    height: 50px;
+    img {
+      width: 50px;
+      height: 50px;
+      animation-timing-function: ease-in-out;
+      animation: paper-plane-soaring 4s forwards infinite;
+    }
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    left: 0;
+    transform: rotate(10deg);
+  }
+  30% {
+    transform: rotate(60deg);
+  }
+  50% {
+//    transform: rotate(50deg);
+    left: 70%;
+  }
+  60% {
+//    transform: rotate(-20deg);
+  }
+  70% {
+//    transform: rotate(-20deg);
+  }
+  100% {
+    left: 100%;
+    transform: rotate(30deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes paper-plane-soaring {
+  0% {
+    transform: rotate(-40deg);
+  }
+  20% {
+    transform: rotate(-45deg);
+  }
+  30% {
+    transform: rotate(-35deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  60% {
+    transform: rotate(-15deg);
+  }
+  70% {
+    transform: rotate(5deg);
+  }100% {
+    transform: rotate(-40deg);
+  }
+}

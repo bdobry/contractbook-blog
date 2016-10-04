@@ -1,6 +1,7 @@
+@import 'https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans:300,400,600,700';
+
 body {
   font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
   font-family: $font-family-serif;
   color: #000;
 }
@@ -9,15 +10,16 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: Libre Baskerville;
+  font-family: 'Libre Baskerville', serif;
 }
 
 p,
 date,
 i,
+ul,
 .caption,
 .wp-caption-text {
-  font-family: Open Sans;
+  font-family: Open Sans, sans-serif;
 }
 
 h1,
@@ -61,7 +63,7 @@ h4 {
   font-size: 22px;
   font-weight: 400;
   line-height: 36px;
-  font-family: Libre Baskerville;
+  font-family: 'Libre Baskerville', serif;
   opacity: .6;
   a {
     font-size: inherit !important;
@@ -76,7 +78,7 @@ hr {
 .subtitle {
   margin-top: 0;
   padding-top: 0;
-  font-family: Libre Baskerville;
+  font-family: 'Libre Baskerville', serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 36px;
@@ -88,12 +90,6 @@ p {
   font-size: 18px;
   font-weight: 300;
   line-height: 30px;
-  b {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 28px;
-    margin-bottom: 20px;
-  }
 }
 
 .caption,

@@ -1,7 +1,74 @@
 #tutorials {
+  .search {
+    //    position: relative;
+    //    height: 143px;
+    background-color: #f7f7f7;
+    margin-bottom: 25px;
+    .title {
+      background: none;
+      z-index: 2;
+      h2 {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 27px;
+        margin-bottom: 0;
+      }
+      h3 {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        padding-top: 20px;
+        //        padding-bottom: 20px;
+      }
+    }
+    img {
+      padding-top: 40px;
+    }
+    .question--icon {
+      position: absolute;
+      z-index: 5;
+      padding-left: 15px;
+    }
+    .exclamation--icon {
+      position: absolute;
+      z-index: 5;
+      margin-left: -28%;
+    }
+  }
   .row {
     max-width: 1180px;
     margin: 0 auto;
+    .break {
+      display: block;
+      float: left;
+      width: 100%;
+      max-width: 1160px;
+      padding-right: 10px;
+      padding-left: 30px;
+      margin-top: 15px;
+      margin-bottom: 22px;
+    }
+    .count {
+      padding-left: 10px;
+      p {
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 14px;
+        margin-bottom: 0;
+      }
+    }
+    .sorting {
+      padding-right: 10px;
+      p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        margin-bottom: 0;
+      }
+    }
+    .columns:last-child {
+      float: left;
+    }
     .flex-video {
       iframe {
         padding-left: 10px;
@@ -10,7 +77,7 @@
     }
   }
   .description {
-    padding: 0 10px 20px 10px;
+    padding: 0 10px 70px 10px;
     text-align: center;
     a {
       color: inherit;
@@ -25,7 +92,6 @@
     }
     hr {
       width: 10%;
-      margin-top: 0;
       margin-bottom: 15px;
       padding-top: 15px;
       border-bottom: 2px solid #dedede;
@@ -40,9 +106,63 @@
       margin: 0 auto;
     }
   }
+  .flex-video {
+    padding-bottom: 57.5%;
+  }
+  .load-more {
+    margin-bottom: 70px;
+    .button {
+      width: 258px;
+      height: 40px;
+      background: $color-light-green;
+      border-color: $color-dark-green;
+    }
+  }
   @media (max-width: 1024px) {
     .columns {
       padding-left: 10px;
       padding-right: 10px;
 }
+    .title {
+      h2,
+      h3,
+      hr {
+        z-index: 10 !important;
+      }
+    }
+    .search {
+      z-index: 1;
+      .title {
+        z-index: 10;
+      }
+      .exclamation--icon {
+        display: none;
+      }
+      .question--icon {
+        display: none;
+      }
+      img {
+        position: absolute;
+        top: 50px;
+        left: 20px;
+        z-index: 3;
+        padding-top: 0;
+        &:nth-child(2) {
+          left: auto;
+          right: 20px;
+          top: -125px;
+        }
+      }
+    }
+  }
+  @media (max-width: 660px) {
+    .search {
+      img {
+        left: -70px;
+        &:nth-child(2) {
+          right: -70px;
+        }
+      }
+}
+  }
 }

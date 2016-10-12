@@ -40,4 +40,9 @@
       margin: 0 auto;
     }
   }
+  @media (max-width: 1024px) {
+    .columns {
+      padding-left: 10px;
+      padding-right: 10px;
+}
 }

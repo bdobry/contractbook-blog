@@ -69,15 +69,9 @@
     .columns:last-child {
       float: left;
     }
-    .flex-video {
-      iframe {
-        padding-left: 10px;
-        padding-right: 10px;
-      }
-    }
   }
   .description {
-    padding: 0 10px 70px 10px;
+    padding: 20px 10px 70px 10px;
     text-align: center;
     a {
       color: inherit;
@@ -106,9 +100,6 @@
       margin: 0 auto;
     }
   }
-  .flex-video {
-    padding-bottom: 57.5%;
-  }
   .load-more {
     margin-bottom: 70px;
     .button {
@@ -122,7 +113,7 @@
     .columns {
       padding-left: 10px;
       padding-right: 10px;
-}
+    }
     .title {
       h2,
       h3,
@@ -163,6 +154,6 @@
           right: -70px;
         }
       }
-}
+    }
   }
 }

@@ -5229,7 +5229,8 @@ progress::-webkit-progress-bar {
 
 #tutorials .row {
   max-width: 1180px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
   #tutorials .row .break {
     display: block;
     float: left;
@@ -5291,6 +5292,14 @@ progress::-webkit-progress-bar {
     border-color: #769025; }
 
 @media (max-width: 1024px) {
+  #tutorials .video-thumbnail img {
+    display: none !important; }
+  #tutorials .reveal-modal {
+    display: block !important;
+    position: static !important;
+    min-height: inherit; }
+    #tutorials .reveal-modal .flex-video {
+      visibility: visible !important; }
   #tutorials .columns {
     padding-left: 10px;
     padding-right: 10px; }

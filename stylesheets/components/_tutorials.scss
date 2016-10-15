@@ -38,6 +38,7 @@
   .row {
     max-width: 1180px;
     margin: 0 auto;
+    overflow: hidden;
     .break {
       display: block;
       float: left;
@@ -110,6 +111,19 @@
     }
   }
   @media (max-width: 1024px) {
+    .video-thumbnail {
+      img {
+        display: none !important;
+      }
+    }
+    .reveal-modal {
+      display: block !important;
+      position: static !important;
+      min-height: inherit;
+      .flex-video {
+        visibility: visible !important;
+      }
+    }
     .columns {
       padding-left: 10px;
       padding-right: 10px;
